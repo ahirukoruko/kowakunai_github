@@ -1,6 +1,6 @@
 # セットアップ
 
-## ターミナル
+- ターミナル
 
 ### 秘密鍵、公開鍵の作成と設定
 
@@ -18,7 +18,7 @@ ssh-ed25519 AAAA(略)
 ```
 公開鍵をコピー
 
-## github
+- github
 Settings>Access>SSH and GPG keysからNew SSH keyを追加。TitleをつけてKeyのところにさっきコピーした公開鍵をペースト。
 
 `sudo`を使って`vim`でssh_configを編集
@@ -27,7 +27,7 @@ $ sudo vim /etc/ssh/ssh_config
 ```
 文章を追記
 
-## ターミナル
+- ターミナル
 ### 鍵を使えるようにPC側の色々設定
 ```
 $ git config --global user.email"githubメールアドレス"
@@ -54,13 +54,13 @@ Host github.com
 
 # 2回目以降
 
-## github
+- github
 
 新規レポジトリを作成/既存レポジトリを開き、sshのURLを取得(↓みたいなやつ)
 ```
 git@github.com:ユーザー名/レポジトリ名_github.git
 ```
-## ターミナル
+- ターミナル
 
 `git clone`でレポジトリをgithubから自分のpcに持ってくる
 ``` 
@@ -88,5 +88,3 @@ $ git commit -m "intit"
 $ git push
 ```
 完成！
-
-
