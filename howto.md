@@ -19,6 +19,7 @@ ssh-ed25519 AAAA(略)
 公開鍵をコピー
 
 - github
+
 Settings>Access>SSH and GPG keysからNew SSH keyを追加。TitleをつけてKeyのところにさっきコピーした公開鍵をペースト。
 
 `sudo`を使って`vim`でssh_configを編集
